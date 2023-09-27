@@ -140,9 +140,9 @@ main h3 {
 /* Call to Action Styles */
 .cta-container {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     background-color: #6f7d9b;
-    margin-top: 30px;
+    margin-top: 15px;
     text-decoration: underline;
     font-weight: bold;
     font-size: 20px;
@@ -156,16 +156,18 @@ V
    display: inline-block;
     padding: 10px 20px;
     background-color: #007BFF;
-    color: #ffffff;
+    color: #050608;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 15px;
-    transition: background-color 0.3s;
+    border-radius: 10px;
+    font-weight: 900;
+    margin-top: 10px;
+    transition: background-color 0.5s;
+    font-size: 25px;
 }
 
 .cta-button:hover {
     background-color: #7640B3;
+    
 }
 
 /* Footer Styles */
