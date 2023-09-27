@@ -146,7 +146,12 @@ main h3 {
     text-decoration: underline;
     font-weight: bold;
     font-size: 20px;
-    
+    h2 {
+  color: white ;
+}
+    p {
+  color: white;
+}
 
 V 
 
