@@ -163,6 +163,9 @@ V
     margin-top: 10px;
     transition: background-color 0.5s;
     font-size: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
 }
 
 .cta-button:hover {
