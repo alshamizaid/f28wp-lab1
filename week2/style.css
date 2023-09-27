@@ -141,19 +141,13 @@ main h3 {
 .cta-container {
     text-align: center;
     padding: 15px;
-    background-color: #6f7d9b;
+    background-color:white ;
+    color: black ;
     margin-top: 15px;
     text-decoration: underline;
     font-weight: bold;
     font-size: 20px;
-    h2 {
-  color: white ;
-}
-    p {
-  color: white;
-}
 
-V 
 
 }
 
