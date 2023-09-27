@@ -113,9 +113,9 @@ main h3 {
 }
 
 .service-column img {
-    width: 100%;
+    width: 250px;
     height: auto;
-    margin-bottom: 250px;
+    margin-bottom: 10px;
 }
 
 .service-column h3 {
