@@ -7,27 +7,31 @@
     .error {
       color: red;
     }
+
+    .success {
+      color: green;
+    }
   </style>
 </head>
 <body>
   <h2>User Registration</h2>
   <form id="registrationForm">
-    <div>
+    <div class="input-control">
       <label for="username">Username:</label>
       <input type="text" id="username" name="username" placeholder="Enter your username">
       <div class="error" id="usernameError"></div>
     </div>
-    <div>
+    <div class="input-control">
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" placeholder="Enter your email">
       <div class="error" id="emailError"></div>
     </div>
-    <div>
+    <div class="input-control">
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" placeholder="Enter your password">
       <div class="error" id="passwordError"></div>
     </div>
-    <div>
+    <div class="input-control">
       <label for="confirmPassword">Confirm Password:</label>
       <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
       <div class="error" id="confirmPasswordError"></div>
@@ -61,11 +65,13 @@
     function isUsernameValid() {
       if (username.value.trim() === '') {
         usernameError.textContent = 'Username cannot be empty';
-        username.style.borderColor = 'red';
+        usernameError.classList.add('error');
+        usernameError.classList.remove('success');
         return false;
       } else {
-        usernameError.textContent = '';
-        username.style.borderColor = 'green';
+        usernameError.textContent = 'Username is valid';
+        usernameError.classList.remove('error');
+        usernameError.classList.add('success');
         return true;
       }
     }
@@ -74,15 +80,18 @@
       const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
       if (email.value.trim() === '') {
         emailError.textContent = 'Email cannot be empty';
-        email.style.borderColor = 'red';
+        emailError.classList.add('error');
+        emailError.classList.remove('success');
         return false;
       } else if (!emailPattern.test(email.value)) {
         emailError.textContent = 'Invalid email format';
-        email.style.borderColor = 'red';
+        emailError.classList.add('error');
+        emailError.classList.remove('success');
         return false;
       } else {
-        emailError.textContent = '';
-        email.style.borderColor = 'green';
+        emailError.textContent = 'Email is valid';
+        emailError.classList.remove('error');
+        emailError.classList.add('success');
         return true;
       }
     }
@@ -90,15 +99,18 @@
     function isPasswordValid() {
       if (password.value.trim() === '') {
         passwordError.textContent = 'Password cannot be empty';
-        password.style.borderColor = 'red';
+        passwordError.classList.add('error');
+        passwordError.classList.remove('success');
         return false;
       } else if (password.value.length < 8) {
         passwordError.textContent = 'Password must be at least 8 characters';
-        password.style.borderColor = 'red';
+        passwordError.classList.add('error');
+        passwordError.classList.remove('success');
         return false;
       } else {
-        passwordError.textContent = '';
-        password.style.borderColor = 'green';
+        passwordError.textContent = 'Password is valid';
+        passwordError.classList.remove('error');
+        passwordError.classList.add('success');
         return true;
       }
     }
@@ -106,19 +118,21 @@
     function isConfirmPasswordValid() {
       if (confirmPassword.value.trim() === '') {
         confirmPasswordError.textContent = 'Confirm Password cannot be empty';
-        confirmPassword.style.borderColor = 'red';
+        confirmPasswordError.classList.add('error');
+        confirmPasswordError.classList.remove('success');
         return false;
       } else if (confirmPassword.value !== password.value) {
         confirmPasswordError.textContent = 'Passwords do not match';
-        confirmPassword.style.borderColor = 'red';
+        confirmPasswordError.classList.add('error');
+        confirmPasswordError.classList.remove('success');
         return false;
       } else {
-        confirmPasswordError.textContent = '';
-        confirmPassword.style.borderColor = 'green';
+        confirmPasswordError.textContent = 'Passwords match';
+        confirmPasswordError.classList.remove('error');
+        confirmPasswordError.classList.add('success');
         return true;
       }
     }
   </script>
 </body>
 </html>
-
