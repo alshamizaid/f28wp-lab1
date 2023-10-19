@@ -2,21 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wanderlust Voyages | Travel Agency</title>
+  <title>Gallery - Wanderlust Voyages</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+   .gallery-container {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 40px;
+  }
+
+   .gallery-container img {
+	width: 24%;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
-<body> 
-  <!-- Main Container -->
-  <div>
-
-    <!-- Header Section -->
-    <header>
-      <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
-    </header>
-
-    <!-- Navigation Section -->
+<body>
+ <div>
+  <header>
+    <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
+	</header>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -25,86 +34,115 @@
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="tasks.html">Tasks</a></li>
-        <li><a href="form.html">Form</a></li>
-
     </ul>
     </nav>
+  
+  <main class="services">
+      <h1>Gallery</h1>
+    <!---Slide Show -->
+		<div class="slideshow-container">
 
- <section class="banner-container">
-      <img src="images/travel banner.svg" alt="Illustrative banner of travel destinations" class="centered-banner" loading="lazy">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 8</div>
+        <img src="images/img1.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 8</div>
+        <img src="images/img2.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 8</div>
+        <img src="images/img3.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 8</div>
+        <img src="images/img4.jpeg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 8</div>
+        <img src="images/img5.avif" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 8</div>
+        <img src="images/img6.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 8</div>
+        <img src="images/img7.webp" style="width:100%">
+      </div>
 
-    </section>
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 8</div>
+        <img src="images/img8.webp" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span> 
+        <span class="dot" onclick="currentSlide(8)"></span>
+      </div>
+   <!-- Call to Action -->
+   <section class="cta-container">
+    <div id = "textDiv"><h2>Ready to Experience Our Services?</h2></div>
+    <p>Join us today and discover the difference we can make for you!</p>
+    <a href="form.html" class="cta-button"><span>Contact Us Now</span></a>
+  </section>
 
-    <!-- Main Content Section -->
-    <main class="services">
-
-      <!-- About Us -->
-      <section>
-        <h1> OUR STORY </h1>
-        <p>
-          Every journey has a beginning, and ours started on the bustling streets of Bangkok. 
-          After a chance meeting between Jane and John, two avid travelers from different corners of the world, 
-          <b>Wanderlust Voyages</b> was born out of a shared dream to help others experience the beauty and wonder of our planet.
-        </p>
-        <p>We provide top-notch services to our clients.</p>
-      </section>
-
-      <!-- Our Services -->
-      <section>
-        <h2>Our Services</h2>
-        <div class="services-container">
-
-          <div class="service-column">
-            <img src="images/Flights.png" alt="Illustration representing flight bookings">
-            <h3>Flight and Transport Bookings</h3>
-            <p>One of the primary services offered by travel agencies is the reservation of flights.</p>
-          </div>
-
-          <div class="service-column">
-            <img src="images/ladies facial.png" alt="Illustration of a hotel">
-            <h3>Accommodation Reservations</h3>
-            <p>Travel agencies have partnerships and affiliations with a wide range of hotels.</p>
-          </div>
-
-          <div class="service-column">
-            <img src="images/tour packages.png" alt="Illustration representing tour packages">
-            <h3>Itinerary Planning and Tour Packages</h3>
-            <p>Travel agencies offer customized and pre-packaged tours to suit the preferences of travelers.</p>
-          </div>
-
-          <div class="service-column">
-            <img src="images/reservation.png" alt="Illustration representing activities and excursions">
-            <h3>Activity & Excursion Bookings</h3>
-            <p>We curate and book a diverse range of local activities and excursions for unforgettable experiences.</p>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Pricing Section -->
-      <section>
-        <h2>Pricing</h2>
-        <p>Please contact us for pricing information on our services.</p>
-      </section>
-
-      <!-- Call to Action -->
-      <section class="cta-container">
-        <h2>READY TO EXPERIENCE OUR SERVICES ? </h2>
-        <p>Join us now to see what a difference we can make for you!</p>
-        <a href="contact.html" class="cta-button">Contact Us Now</a>
-      </section>
-
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
+  </main>
+  <footer>
       <ul>
         <li><a href="https://www.facebook.com/">Facebook</a></li>
         <li><a href="https://twitter.com/">Twitter</a></li>
-        <li><a href="https://www.instagram.com/">Instagram</a></li>
+        <li ><a href="https://www.instagram.com/">Instagram</a></li>
       </ul>
-      <p>&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
-    </footer>
-  </div>
+    <p >&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
+  </footer>
+ </div>
+ <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
 </body>
 </html>
