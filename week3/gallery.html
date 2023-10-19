@@ -1,132 +1,148 @@
 <!DOCTYPE html>
-<html>
-<head> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery - Wanderlust Voyages</title>
   <link rel="stylesheet" href="style.css">
-  <style> 
-    .container {
-      position: relative;
-    }
+  <style>
+   .gallery-container {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 40px;
+  }
 
-    .mySlide {
-      display: none;
-    }
-
-    .numbertext {
-      position: absolute;
-      top: 0;
-      color: white;
-    }
-
-    .numbertext::after {
-      content: "/8"; /* Change the total number of slides as needed. */
-    }
-
-    .prev, .next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      padding: 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .prev {
-      left: 0;
-    }
-
-    .next {
-      right: 0;
-    }
+   .gallery-container img {
+	width: 24%;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
   </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
- <div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1</div>
-    <img src="week3/images/1.jpeg" alt="Image 1">
-  </div>
+ <div>
+  <header>
+    <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
+	</header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+    </ul>
+    </nav>
+  
+  <main class="services">
+      <h1>Gallery</h1>
+    <!---Slide Show -->
+		<div class="slideshow-container">
 
-  <div class="mySlides">
-    <div class="numbertext">2</div>
-    <img src="week3/images/2.jpeg" alt="Image 2">
-  </div>
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 8</div>
+        <img src="images/img1.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 8</div>
+        <img src="images/img2.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 8</div>
+        <img src="images/img3.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 8</div>
+        <img src="images/img4.jpeg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 8</div>
+        <img src="images/img5.avif" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 8</div>
+        <img src="images/img6.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 8</div>
+        <img src="images/img7.webp" style="width:100%">
+      </div>
 
-   <div class="mySlides">
-    <div class="numbertext">3</div>
-    <img src="week3/images/3.jpeg" alt="Image 3">
-  </div> 
- <div class="mySlides">
-    <div class="numbertext">4</div>
-    <img src="week3/images/4.jpeg" alt="Image 3">
-  </div> 
-   <div class="mySlides">
-    <div class="numbertext">5</div>
-    <img src="week3/images/5.jpeg" alt="Image 3">
-  </div> 
-   <div class="mySlides">
-    <div class="numbertext">6</div>
-    <img src="week3/images/6.jpeg" alt="Image 3">
-  </div> 
-   <div class="mySlides">
-    <div class="numbertext">7</div>
-    <img src="week3/images/7.jpeg" alt="Image 3">
-  </div> 
-  <div class="mySlides">
-    <div class="numbertext">8</div>
-    <img src="week3/images/8.jpeg" alt="Image 8">
-  </div>
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 8</div>
+        <img src="images/img8.webp" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span> 
+        <span class="dot" onclick="currentSlide(8)"></span>
+      </div>
+   <!-- Call to Action -->
+   <section class="cta-container">
+    <div id = "textDiv"><h2>Ready to Experience Our Services?</h2></div>
+    <p>Join us today and discover the difference we can make for you!</p>
+    <a href="form.html" class="cta-button"><span>Contact Us Now</span></a>
+  </section>
 
-  <a href="#" class="prev">Previous</a>
-  <a href="#" class="next">Next</a>
-</div>
-
-  <script>
-  // Variable to keep track of the current slide
-let currentSlide = 1;
-
-// Function to increment/decrement the current slide number
-function changeSlide(direction) {
-  if (direction === "next") {
-    currentSlide++;
-  } else if (direction === "prev") {
-    currentSlide--;
+  </main>
+  <footer>
+      <ul>
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+        <li><a href="https://twitter.com/">Twitter</a></li>
+        <li ><a href="https://www.instagram.com/">Instagram</a></li>
+      </ul>
+    <p >&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
+  </footer>
+ </div>
+ <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
-
-  // Handle the scenarios when the slideshow reaches the first or last slide
-  if (currentSlide < 1) {
-    currentSlide = 8;
-  } else if (currentSlide > 8) {
-    currentSlide = 1;
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
   }
-
-  // Update the slide's visibility
-  updateSlideVisibility();
-}
-
-// Function to update the slide's visibility
-function updateSlideVisibility() {
-  // Get all slide elements
-  const slideEls = document.querySelectorAll(".mySlides");
-
-  // Hide all slides
-  slideEls.forEach(el => el.style.display = "none");
-
-  // Show the current slide
-  slideEls[currentSlide - 1].style.display = "block";
-
-  // Update the slide number text
-  const numberTextEl = document.querySelector(".numbertext");
-  numberTextEl.textContent = currentSlide;
-}
-
-// Add event listeners to the next and previous buttons
-document.querySelector(".next").addEventListener("click", () => changeSlide("next"));
-document.querySelector(".prev").addEventListener("click", () => changeSlide("prev"));
-
-// Call the updateSlideVisibility function on page load to show the first slide
-updateSlideVisibility();
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
   </script>
+
 </body>
 </html>
