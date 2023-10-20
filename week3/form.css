@@ -1,4 +1,10 @@
-
+body {
+    background: scroll;
+       margin: 0;
+    padding: 0;
+    color: #505050;
+    background: linear-gradient(45deg, #7393B3, rgb(115, 147, 179));
+}
 /* Navigation Styles */
 nav ul {
     background-color: #333;
