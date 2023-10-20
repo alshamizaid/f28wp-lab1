@@ -5,7 +5,7 @@ HTML Structure**: The code starts with an HTML document structure, including a <
 It sets the character encoding, provides a title for the page (‘‘Gallery - Wanderlust Voyages‘‘), and includes a reference to an external CSS file (‘‘style.
 The CSS styles are defined within the'<head>' section using a'<style>' block to give the gallery its desired appearance.
 In the'<body>'there is a header section that showcases the name of the travel agency.
-Below this header a navigation menu is created using a list ('<ul>'). List items ('<li>'). Each list item contains a link, to pages on the website such as 'Home' 'About,' 'Services,' 'Gallery,' 'Contact,' 'Tasks' and 'Form.' The page title, which is 'Gallery' is displayed as a heading (`<h1>').
+Below this header a navigation menu is created using a list ('<ul>'). List items ('<li>'). Each list item contains a link, to pages on the website such as 'Home' 'About,' 'Services,' 'Gallery,' 'Contact,' 'Tasks' and 'Form.' The page title, which is 'Gallery' is displayed as a heading (`h1').
 Following the image slideshow there is a call, to action section that encourages users to explore and enjoy the services provided by the agency. This section includes a heading, a brief message and a link to navigate to the 'Form' page.
 The HTML structure ensures that the slideshow is encapsulated within an element having the class "slideshow container." 
 Inside this container you will find components known as "mySlides." Each of these components represents a slide, in the gallery. Lets take the slide as an example. It contains an image with the source "images/1.jpeg". Also includes an element called "numbertext" that shows the slide number.
