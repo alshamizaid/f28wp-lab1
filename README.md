@@ -1,7 +1,7 @@
 # f28wp-lab1
 explaining slideshow :
 This code is an HTML document that creates a web page for a travel agency`s gallery with an image slideshow.
-: **HTML Structure**: The code starts with an HTML document structure, including a `<!DOCTYPE>` declaration, an `<html>` element, and a `<head>` section.
+HTML Structure**: The code starts with an HTML document structure, including a `<!DOCTYPE>` declaration, an `<html>` element, and a `<head>` section.
 It sets the character encoding, provides a title for the page (‘‘Gallery - Wanderlust Voyages‘‘), and includes a reference to an external CSS file (‘‘style.
 The CSS styles are defined within the `<head>` section using a `<style>` block to give the gallery its desired appearance.
 In the `<body>` there is a header section that showcases the name of the travel agency.
